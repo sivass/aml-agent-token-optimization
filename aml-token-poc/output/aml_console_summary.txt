@@ -1,0 +1,71 @@
+========================================================
+AML AI TOKEN USAGE POC
+========================================================
+
+Mode:                         Offline simulation
+Tokenizer:                    tiktoken (o200k_base)
+Output tokens:                simulated
+Price / 1M tokens (USD):      input 2.50, output 10.00
+
+Alerts analysed:              15
+Watchlist hits:               32
+Hits sent to AI:              32
+Average hits / alert:         2.13
+Factors evaluated / hit:      12
+
+Average input tokens / hit:   419
+Average output tokens / hit:  162
+Average total tokens / hit:   581
+
+Average tokens / alert:       1,239
+Min / max tokens per alert:   568 / 2,943
+Average cost / hit:           USD 0.002664
+Average cost / alert:         USD 0.005683
+
+--------------------------------------------------------
+EFFECT OF MULTIPLE HITS (average tokens per alert)
+--------------------------------------------------------
+1 hit(s) / alert:             579
+2 hit(s) / alert:             1,160
+3 hit(s) / alert:             1,728
+4 hit(s) / alert:             2,347
+5 hit(s) / alert:             2,943
+
+--------------------------------------------------------
+FINANCE PROJECTION (observed sample mix)
+--------------------------------------------------------
+1,000 alerts/month
+Estimated tokens:             1.24M
+Estimated cost:               USD 5.68
+
+5,000 alerts/month
+Estimated tokens:             6.20M
+Estimated cost:               USD 28.41
+
+10,000 alerts/month
+Estimated tokens:             12.39M
+Estimated cost:               USD 56.83
+
+50,000 alerts/month
+Estimated tokens:             61.95M
+Estimated cost:               USD 284.15
+
+100,000 alerts/month
+Estimated tokens:             123.90M
+Estimated cost:               USD 568.30
+
+--------------------------------------------------------
+SCENARIOS at 10,000 alerts/month
+--------------------------------------------------------
+scenario         hits/alert  tokens/alert    tokens   USD/month
+observed_sample        2.13         1,239    12.39M       56.83
+low                    1.40           813     8.13M       37.29
+expected               1.85         1,074    10.74M       49.28
+high                   4.00         2,323    23.23M      106.56
+
+--------------------------------------------------------
+OUTPUT-SIZE SENSITIVITY
+--------------------------------------------------------
+If every response used 350 output tokens:
+Tokens / hit:                 769
+Cost / alert:                 USD 0.009702

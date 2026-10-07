@@ -1,0 +1,4 @@
+tiktoken>=0.8
+pytest>=8
+# Only needed when USE_AZURE_OPENAI=true
+openai>=1.50
